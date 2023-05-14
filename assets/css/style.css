@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900|Roboto:100,300,400,500&display=swap");
 
+*{
+    scroll-behavior:smooth;
+}
 .white-bg {
     background: #ffffff
 }
@@ -3845,10 +3848,10 @@ hr {
 .footer-bottom-area .footer-copy-right p a {
     color: #F7CA14
 }
-
 .footer-social a {
     color: #222222;
     font-size: 20px
+    
 }
 
 .footer-social a i {
@@ -6969,3 +6972,73 @@ del {
     max-width: 10%;
     max-height: 10%;
 }
+  /* .banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+  .banner li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-transition: opacity .6s ease-in-out;
+    transition: opacity .6s ease-in-out
+}
+
+  .banner li.active {
+    opacity: 1;
+    -webkit-transition: opacity .6s ease-in-out;
+    transition: opacity .6s ease-in-out
+}
+
+  .banner li:nth-child(1) {
+    background-image: url("../img/gallery/kham1.jpeg")
+}
+
+  .banner li:nth-child(2) {
+    background-image: url("../img/gallery/kham2.jpeg")
+}
+
+  .banner li:nth-child(3) {
+    background-image: url("../img/gallery/kham1.jpeg")
+}
+
+  i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+  i:hover {
+    -webkit-transform: translateY(-50%) scale(1.1);
+    transform: translateY(-50%) scale(1.1)
+}
+
+  .prev {
+    left: 30px
+}
+
+  .next {
+    right: 30px
+} */
