@@ -16,10 +16,12 @@
         $(".header-sticky").removeClass("sticky-bar");
         $('#back-top').fadeOut(500);
         $('#zalo').fadeOut(500);
+        $('#fb').fadeOut(500);
       } else {
         $(".header-sticky").addClass("sticky-bar");
         $('#back-top').fadeIn(500);
         $('#zalo').fadeIn(500);
+        $('#fb').fadeIn(500);
       }
     });
   // Scroll Up
