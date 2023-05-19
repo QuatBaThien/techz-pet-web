@@ -2697,7 +2697,7 @@ hr {
 }
 
 .header-area .main-header .main-menu ul li a {
-    color: rgb(4, 16, 114);
+    color: #fff;
     font-weight: 700;
     padding: 39px 20px;
     display: block;
@@ -2888,7 +2888,7 @@ hr {
 
 .slider-area {
     position: relative;
-    background-image: url(../img/hero/herobg1.png
+    background-image: url(../img/hero/hero_techzpet.png
         );
     background-repeat: no-repeat;
     background-position: center center;
