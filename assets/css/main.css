@@ -193,7 +193,7 @@ p {
     clear: both
 }
 
-a,
+a, b, 
 .button {
     -webkit-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
