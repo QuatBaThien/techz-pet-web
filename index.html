@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Techz Pet | Trang chủ </title>
+    <title>Techz Pet</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -56,10 +56,13 @@
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="index.html">TRANG CHỦ</a></li>
+                                            <li><a href="index.html" id="home">TRANG CHỦ</a></li>
 
-                                            <li><a href="index.html#dichvu">DỊCH VỤ</a></li>
-                                            <li><a href="index.html#lienhe">LIÊN HỆ</a></li>
+                                            <li><a href="index.html#dichvu" class="services">KHÁM BỆNH</a></li>
+                                            <li><a href="index.html#dichvu" class="services">LƯU GIỮ</a></li>
+                                            <li><a href="index.html#dichvu" class="services">SPA</a></li>
+                                            <li><a href="index.html#dichvu" class="services">PETSHOP</a></li>
+                                            <li><a href="index.html#lienhe" id="contact">LIÊN HỆ</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -142,7 +145,7 @@
         </div>
         <!-- Slider Area End -->
          <!-- About Start -->
-         <div id="dichvu" class="our-services section-padding30">
+         <div  class="our-services section-padding30">
             <div class="container">
                 <div class="row justify-content-sm-center">
                     <div class="cl-xl-7 col-lg-8 col-md-10">
@@ -252,8 +255,8 @@
                                 <img src="./assets/img/gallery/service2.png" class="img-fluid w-80 service-img">
                             </div>
                             <div class="services-cap">
-                                <h5>SPA & GROOMING/h5>
-                                <p>Dịch vụ Spa & Grooming</p>
+                                <h5>SPA & GROOMING</h5>
+                                <p>Dịch vụ Cắt tỉa lông và làm đẹp</p>
                                 <h5><a>Xem thêm</a></h5>
                             </div>
                         </div>
@@ -265,7 +268,7 @@
                             </div>
                             <div class="services-cap">
                                 <h5>HOTEL</h5>
-                                <p>Dịch vụ khách sạn lưu trú</p>
+                                <p>Dịch vụ Lưu trú ngắn hạn và dài ngày</p>
                                 <h5><a>Xem thêm</a></h5>
                             </div>
                         </div>
@@ -295,7 +298,7 @@
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30" data-toggle="modal" data-target="#inforgraphicModal_clinic">
+                        <div class="single-services text-center mb-30" data-toggle="modal" data-target="#inforgraphicModal_training">
                             <div class="services-ion">
                                 <img src="./assets/img/gallery/service6.png" class="img-fluid w-80 service-img">
                             </div>
@@ -318,7 +321,7 @@
             role="document">
             <div class="modal-content">
                 <div class="modal-body" style="background-color: #F4F5EF;">
-                    <img src="./assets/img/gallery/clinic.png" class="img-fluid" style="width: 100%;">
+                    <img src="./assets/img/gallery/CLINIC.png" class="img-fluid" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -329,7 +332,7 @@
             role="document">
             <div class="modal-content">
                 <div class="modal-body" style="background-color: #F4F5EF;">
-                    <img src="./assets/img/gallery/hotel.png" class="img-fluid w-100">
+                    <img src="./assets/img/gallery/HOTEL.png" class="img-fluid w-100">
                 </div>
             </div>
         </div>
@@ -340,7 +343,7 @@
             role="document">
             <div class="modal-content">
                 <div class="modal-body" style="background-color: #F4F5EF;">
-                    <img src="./assets/img/gallery/spa.png" class="img-fluid w-100">
+                    <img src="./assets/img/gallery/SPA.png" class="img-fluid w-100">
                 </div>
             </div>
         </div>
@@ -351,7 +354,7 @@
             role="document">
             <div class="modal-content">
                 <div class="modal-body" style="background-color: #F4F5EF;">
-                    <img src="./assets/img/gallery/petshop.png" class="img-fluid w-100">
+                    <img src="./assets/img/gallery/PETSHOP.png" class="img-fluid w-100">
                 </div>
             </div>
         </div>
@@ -362,10 +365,21 @@
         role="document">
         <div class="modal-content">
             <div class="modal-body" style="background-color: #F4F5EF;">
-                <img src="./assets/img/gallery/breeding.png" class="img-fluid w-100">
+                <img src="./assets/img/gallery/BREEDING.png" class="img-fluid w-100">
             </div>
         </div>
     </div>
+</div>
+<div class="modal fade" id="inforgraphicModal_training" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" style="min-width:73%;"
+    role="document">
+    <div class="modal-content">
+        <div class="modal-body" style="background-color: #F4F5EF;">
+            <img src="./assets/img/gallery/TRAINING.png" class="img-fluid w-100">
+        </div>
+    </div>
+</div>
 </div>
         <!--? Gallery Area Start -->
         <div class="gallery-area section-padding30">
@@ -375,7 +389,7 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
                             <h2 class="text-uppercase">Hình ảnh nổi bật</h2>
-                            <span>Hãy khám phá những hình ảnh nổi bật của Techz Pet, ghi lại những khoảnh khắc yêu thương và sự chăm sóc đặc biệt dành cho thú cưng của bạn.</span>
+                            <span>Với dịch vụ thân thiện, nhiệt tình, hãy khám phá những hình ảnh nổi bật của Techz Pet, nơi chúng tôi luôn yêu thương và thấu hiểu tâm lý thú cưng của gia đình bạn.</span>
                         </div>
                     </div>
                 </div>
@@ -527,7 +541,7 @@
                                 </div>
                                 <div class="pl-2 text-lg font-medium" >
                                     
-                                    <strong>0982 56 58 57</strong>
+                                    <p><strong>0982 56 58 57</strong></p>
                                 </div>
                             </div>
                             <div class="flex items-start mb-4">
@@ -537,7 +551,7 @@
                                 </div>
                                 <div class="pl-2 text-lg font-medium">
                                    
-                                    <p><strong>techzpet@gmail.com</strong></p>
+                                    <p><strong>Techzpet@gmail.com</strong></p>
                         
                                 </div>
                             </div>
@@ -551,9 +565,9 @@
                                 </div>
                                 <div class="pl-2 text-lg font-medium">
                                     
-                                    <p><strong>Thứ 2 - Thứ7 : Sáng 08h00 - 12h00, Chiều 14h00 - 20h00</strong></p>
+                                    <p><strong>Thứ 2 - Thứ7 : 8h00- 20h00</strong></p>
                         
-                                    <p><strong>Chủ nhật - Ngày lễ  : Sáng 08h00 - 12h00, Chiều 14h00 - 19h00</strong> </p>
+                                    <p><strong>Chủ nhật - Ngày lễ  : 8h00 - 19h00</strong> </p>
                         
                                 </div>
                             </div>
@@ -632,27 +646,6 @@
                 </div>
             </div>
         </div>
-        <!-- footer-bottom area -->
-        <div class="footer-bottom-area">
-            <div class="container">
-                <div class="footer-border">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xl-12 ">
-                            <div class="footer-copy-right text-center">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    Copyright &copy;
-                                    <script>document.write(new Date().getFullYear());</script> All rights reserved |
-                                    This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
-                                        href="https://colorlib.com" target="_blank">Techz Pet</a>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End-->
     </footer>
     <!-- Scroll Up -->
     <div id="back-top" >

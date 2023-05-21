@@ -47,6 +47,10 @@
     color: #F28705
 }
 
+.blue-color{
+    color: #112957
+}
+
 .boxed-btn {
     background: #fff;
     color: #F28705 !important;
@@ -665,7 +669,8 @@ hr {
     -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
-    background: #fff
+    background: #fff;
+    color: #012957;
 }
 
 .mt-5 {
@@ -2697,7 +2702,6 @@ hr {
 }
 
 .header-area .main-header .main-menu ul li a {
-    color: #fff;
     font-weight: 700;
     padding: 39px 20px;
     display: block;
@@ -2712,9 +2716,23 @@ hr {
     font-family: "Muli", sans-serif
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width:1101px) and (max-width: 1199px) {
     .header-area .main-header .main-menu ul li a {
-        padding: 39px 15px;
+        padding: 39px 3px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
+    .header-area .main-header .main-menu ul li a {
+        padding: 39px 2px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1020px) {
+    .header-area .main-header .main-menu ul li a {
+        padding: 39px 1px;
         font-weight: 600;
     }
 }
@@ -2726,7 +2744,6 @@ hr {
 .header-area .main-header .main-menu ul ul.submenu {
     position: absolute;
     width: 170px;
-    background: rgba(255, 255, 255, 0.9);
     left: 0;
     top: 80%;
     visibility: hidden;
@@ -2887,12 +2904,13 @@ hr {
 }
 
 .slider-area {
+    width: 100%;
     position: relative;
     background-image: url(../img/hero/hero_techzpet.png
         );
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover
+    background-size: 100% 100%
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {

@@ -3,8 +3,8 @@
   
 /* 1. Proloder */
     $(window).on('load', function () {
-      $('#preloader-active').delay(450).fadeOut('slow');
-      $('body').delay(450).css({
+      $('#preloader-active').delay(200).fadeOut('slow');
+      $('body').delay(200).css({
         'overflow': 'visible'
       });
     });
@@ -13,11 +13,17 @@
     $(window).on('scroll', function () {
       var scroll = $(window).scrollTop();
       if (scroll < 400) {
+        $('#home').removeClass("blue-color");
+        $('#contact').removeClass("blue-color");
+        $('.services').removeClass("blue-color");
         $(".header-sticky").removeClass("sticky-bar");
         $('#back-top').fadeOut(500);
         $('#zalo').fadeOut(500);
         $('#fb').fadeOut(500);
       } else {
+        $('#home').addClass("blue-color");
+        $('#contact').addClass("blue-color");
+        $('.services').addClass("blue-color");
         $(".header-sticky").addClass("sticky-bar");
         $('#back-top').fadeIn(500);
         $('#zalo').fadeIn(500);
