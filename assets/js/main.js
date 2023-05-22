@@ -2,11 +2,10 @@
   { "use strict"
   
 /* 1. Proloder */
-    $(window).on('load', function () {
-      $('#preloader-active').delay(200).fadeOut('slow');
-      $('body').delay(200).css({
+
+      $('#preloader-active').delay(500).fadeOut('slow');
+      $('body').delay(500).css({
         'overflow': 'visible'
-      });
     });
 
 /* 2. sticky And Scroll UP */
@@ -15,7 +14,7 @@
       if (scroll < 400) {
         $('#home').removeClass("blue-color");
         $('#contact').removeClass("blue-color");
-        $('.services').removeClass("blue-color");
+        $('.services-text').removeClass("blue-color");
         $(".header-sticky").removeClass("sticky-bar");
         $('#back-top').fadeOut(500);
         $('#zalo').fadeOut(500);
@@ -23,7 +22,7 @@
       } else {
         $('#home').addClass("blue-color");
         $('#contact').addClass("blue-color");
-        $('.services').addClass("blue-color");
+        $('.services-text').addClass("blue-color");
         $(".header-sticky").addClass("sticky-bar");
         $('#back-top').fadeIn(500);
         $('#zalo').fadeIn(500);
@@ -208,7 +207,24 @@
         });
       }
 
+// click àn scroll
+var scrollLinks = document.querySelectorAll('.kham');
 
+function scrollToDichVu(e) {
+  e.preventDefault();
+  const targetElement = document.getElementById('dichvu');
+  window.scrollTo({
+    top: targetElement.offsetTop,
+    behavior: 'smooth'
+  });
+
+  // Simulate click on another link after a delay (2 seconds)
+ 
+}
+
+for (var i = 0; i < scrollLinks.length; i++) {
+  scrollLinks[i].addEventListener('click', scrollToDichVu);
+}
 
 
 })(jQuery);
