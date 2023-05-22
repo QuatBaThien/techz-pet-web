@@ -57,7 +57,11 @@
                                     <nav>
                                       <ul id="navigation">
                                         <li><a href="#" id="home">TRANG CHỦ</a></li>
-                                        <li class="services">
+                                        <li><a href="#" id="clinic" class="services-text open-modal text-uppercase"  style="padding: 10px 5px">Khám bệnh</a></li>
+                                        <li><a href="#"  id="spa" class="services-text open-modal text-uppercase" >Spa</a></li>
+                                        <li><a href="#" id="hotel"class="services-text  open-modal text-uppercase" >Lưu trú</a></li>
+                                        <li><a href="#" id="petshop" class="services-text  open-modal text-uppercase" >Petshop</a></li>
+                                        <!-- <li class="services">
                                           <a class="services-text" href="#dichvu">DỊCH VỤ</a>
                                           <ul class="sub-items">
                                             <li><a href="#" style="padding: 10px 5px" data-toggle="modal"
@@ -69,7 +73,7 @@
                                             <li><a href="#" style="padding: 10px 5px" data-toggle="modal"
                                                 data-target="#inforgraphicModal_petshop">PETSHOP</a></li>
                                           </ul>
-                                        </li>
+                                        </li> -->
                                         <li><a href="#lienhe" id="contact">LIÊN HỆ</a></li>
                                       </ul>
                                     </nav>
@@ -108,7 +112,7 @@
                                 </div>
                                 <div class="hero__caption">
                                     <h1 class="yellow-text" data-animation="fadeInUp" data-delay=".3s">Techz Pet</h1>
-                                    <h2 data-animation="fadeInUp" data-delay=".3s">Better Tech, Heathier Pets</h2>
+                                    <h2 data-animation="fadeInUp" data-delay=".3s">Better Tech, Healthier Pets</h2>
 
                                     <p data-animation="fadeInUp" data-delay=".6s">Techz Pet sử dụng công nghệ tiên tiến
                                         nhất để cung cấp cho thú cưng của bạn sự chăm sóc y tế tốt nhất!</p>
@@ -133,7 +137,7 @@
                                 </div>
                                 <div class="hero__caption">
                                     <h1 class="yellow-text" data-animation="fadeInUp" data-delay=".3s">Techz Pet</h1>
-                                    <h2 data-animation="fadeInUp" data-delay=".3s">Better Tech, Heathier Pets</h2>
+                                    <h2 data-animation="fadeInUp" data-delay=".3s">Better Tech, Healthier Pets</h2>
 
                                     <p data-animation="fadeInUp" data-delay=".6s">Dịch vụ của Techz Pet cung cấp không
                                         chỉ là sản phẩm chất lượng cao, mà còn là sự chăm sóc tận tình nhất cho thú cưng
@@ -254,7 +258,7 @@
                 </div>
                 <div class="row">
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30" id="kham-pop-up" data-toggle="modal"
+                        <div class="single-services text-center mb-30" id="link0" data-toggle="modal"
                             data-target="#inforgraphicModal_clinic">
                             <div class="services-ion">
                                 <img src="./assets/img/gallery/service1.png" class="img-fluid w-80 service-img">
@@ -268,7 +272,7 @@
                     </div>
 
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30" data-toggle="modal"
+                        <div class="single-services text-center mb-30" id="link1" data-toggle="modal"
                             data-target="#inforgraphicModal_spa">
                             <div class="services-ion">
                                 <img src="./assets/img/gallery/service2.png" class="img-fluid w-80 service-img">
@@ -281,7 +285,7 @@
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30" data-toggle="modal"
+                        <div class="single-services text-center mb-30" id="link2" data-toggle="modal"
                             data-target="#inforgraphicModal_hotel">
                             <div class="services-ion">
                                 <img src="./assets/img/gallery/service3.png" class="img-fluid w-80 service-img">
@@ -294,7 +298,7 @@
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30" data-toggle="modal"
+                        <div class="single-services text-center mb-30"  id="link3" data-toggle="modal"
                             data-target="#inforgraphicModal_petshop">
                             <div class="services-ion">
                                 <img src="./assets/img/gallery/service4.png" class="img-fluid w-80 service-img">
@@ -307,7 +311,7 @@
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30" data-toggle="modal"
+                        <div class="single-services text-center mb-30" id="link4" data-toggle="modal"
                             data-target="#inforgraphicModal_breeding">
                             <div class="services-ion">
                                 <img src="./assets/img/gallery/service5.png" class="img-fluid w-80 service-img">
@@ -320,7 +324,7 @@
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30" data-toggle="modal"
+                        <div class="single-services text-center mb-30" id="link5" data-toggle="modal"
                             data-target="#inforgraphicModal_training">
                             <div class="services-ion">
                                 <img src="./assets/img/gallery/service6.png" class="img-fluid w-80 service-img">
@@ -636,7 +640,7 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p>Better Tech, Heathier Pets</p>
+                                        <p>Better Tech, Healthier Pets</p>
                                     </div>
                                 </div>
 
@@ -651,24 +655,17 @@
                                 <div class="row"style="width:350px">
                                     <div class="col-lg">
                                         <ul>
-                                            <li><a href="#dichvu" class="kham" data-toggle="modal"
-                                                    data-target="#inforgraphicModal_clinic">Khám bệnh</a></li>
-                                            <li><a href="#dichvu" class="kham" data-toggle="modal"
-                                                    data-target="#inforgraphicModal_hotel">Khách sạn</a></li>
-                                            <li><a href="#dichvu" class="kham" data-toggle="modal" data-target="#inforgraphicModal_spa"
-                                                    style="padding-right:5px">Spa & Gromming</a></li>
+                                            <li><a href="#" id="clinic-foot">Khám bệnh</a></li>
+                                            <li><a href="#" id="hotel-foot">Lưu trú</a></li>
+                                            <li><a href="#" id="spa-foot">Spa & Gromming</a></li>
 
                                         </ul>
                                     </div>
                                     <div class="col-lg" style="padding-left: 5px;">
                                         <ul>
-                                            <li><a href="#dichvu" class="kham" data-toggle="modal"
-                                                    data-target="#inforgraphicModal_petshop">Petshop</a></li>
-                                            <li><a href="#dichvu" class="kham" data-toggle="modal"
-                                                    data-target="#inforgraphicModal_breeding">Nhân giống</a></li>
-                                            <li><a href="#dichvu" class="kham" data-toggle="modal"
-                                                    data-target="#inforgraphicModal_training">Huấn luyện</a></li>
-
+                                            <li><a href="#" id="petshop-foot">Petshop</a></li>
+                                            <li><a href="#" id="breeding-foot">Nhân giống</a></li>
+                                            <li><a href="#" id="training-foot">Huấn luyện</a></li>
                                         </ul>
                                     </div>
                                 </div>

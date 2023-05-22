@@ -3,8 +3,8 @@
   
 /* 1. Proloder */
 
-      $('#preloader-active').delay(500).fadeOut('slow');
-      $('body').delay(500).css({
+      $('#preloader-active').fadeOut('slow');
+      $('body').css({
         'overflow': 'visible'
     });
 
@@ -208,23 +208,73 @@
       }
 
 // click àn scroll
-var scrollLinks = document.querySelectorAll('.kham');
 
-function scrollToDichVu(e) {
-  e.preventDefault();
-  const targetElement = document.getElementById('dichvu');
-  window.scrollTo({
-    top: targetElement.offsetTop,
-    behavior: 'smooth'
-  });
 
-  // Simulate click on another link after a delay (2 seconds)
- 
+
+
+function openModalAndScroll(startId, targetId) {
+  var documentElement = document.getElementById(startId);
+  var scrollToElement = document.querySelector(targetId);
+
+
+    documentElement.addEventListener('click', function(event) {
+      event.preventDefault();
+      scrollToElement.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(function() {
+        switch (documentElement.id) {
+          case 'clinic':
+          case 'clinic-foot':
+            console.log(`No matching class found: ${documentElement.id}`);
+            document.getElementById('link0').click();
+            break;
+          case 'hotel':
+          case 'hotel-foot':
+            console.log(`No matching class found: ${documentElement.id}`);
+            document.getElementById('link1').click();
+            break;
+          case 'spa':
+          case 'spa-foot':
+            console.log(`No matching class found: ${documentElement.id}`);
+            document.getElementById('link2').click();
+            break;
+          case 'petshop':
+          case 'petshop-foot':
+            console.log(`No matching class found: ${documentElement.id}`);
+            document.getElementById('link3').click();
+            break;
+          case 'breeding-foot':
+            console.log(`No matching class found: ${documentElement.id}`);
+            document.getElementById('link4').click();
+            break;
+          case 'training-foot':
+            console.log(`No matching class found: ${documentElement.id}`);
+            document.getElementById('link5').click();
+            break;
+          default:      
+            console.log(`No matching class found: ${documentElement.id}`);
+            break;
+        }
+      }, 700);
+    });
+
+   
 }
 
-for (var i = 0; i < scrollLinks.length; i++) {
-  scrollLinks[i].addEventListener('click', scrollToDichVu);
-}
+
+document.addEventListener('DOMContentLoaded', function() {
+  openModalAndScroll('clinic', '#dichvu');
+  openModalAndScroll('spa', '#dichvu');
+  openModalAndScroll('hotel', '#dichvu');
+  openModalAndScroll('petshop', '#dichvu');
+  openModalAndScroll('clinic-foot', '#dichvu');
+  openModalAndScroll('spa-foot', '#dichvu');
+  openModalAndScroll('hotel-foot', '#dichvu');
+  openModalAndScroll('petshop-foot', '#dichvu');
+  openModalAndScroll('training-foot', '#dichvu');
+  openModalAndScroll('breeding-foot', '#dichvu');
+  // Add more calls to openModalAndScroll for other modals if needed
+});
+
 
 
 })(jQuery);
